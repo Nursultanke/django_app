@@ -1,8 +1,7 @@
 from django.urls import path
-from .views import index, my_list, about
+from .views import index, second_page
 
 urlpatterns = [
     path('', index),
-    path('list/', my_list),
-    path('about', about, kwargs={"name":"Tom", "age": 38}),
+    path('second_page/', second_page)
 ]
