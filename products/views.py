@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Products
+from .models import Products, Bycycle
 
 
 def index(request):
@@ -10,3 +10,8 @@ def index(request):
 
 def second_page(request):
     return render(request, 'pages/second.html')
+
+
+def bicycle_page(request):
+    bicycle = Bycycle.objects.all()
+    return render(request, 'pages/bycycle_page.html', {'bicycle': bicycle})
