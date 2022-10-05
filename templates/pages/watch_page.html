@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% for i in watch %}
+        <div class="col-sm-3">
+            <img src="https://ae04.alicdn.com/kf/H35864b22487048edba66c3a697a44fc77/Casio.jpg" alt="" width="250">
+            <p>{{ i.w_mark }}</p>
+            <p>{{ i.price }}</p>
+            <p>{{ i.color }}</p>
+            <p>{{ i.made_in}}</p>
+            <p>{{ i.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

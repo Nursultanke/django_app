@@ -7,11 +7,14 @@
     <div class="col-sm-4">
       <div class="panel panel-primary">
         <div class="panel-heading">{{ i.name }}</div>
-        <div class="panel-body"><img src="https://cdn.motor1.com/images/mgl/EKJ2B/s3/auto-neuheiten-2021-2022.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-body"><img src="{{ i.img.url }}" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">{{ i.description }}</div>
       </div>
     </div>
       {% endfor %}
+  </div>
+  <div class="links">
+      <a href="{% url 'bicycle_page' %}">go to bicycles</a>
   </div>
 </div>
 {% endblock %}
