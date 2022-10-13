@@ -1,0 +1,46 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		include mixin/mixins.pug
+	body
+		include assets/_header.pug
+		.uk-container
+			section.gallery
+				h2.heading ГАЛЕРЕЯ BIO-KG
+				p.uk-width-1-1(class="uk-width-1-2@m") В этом разделе отражены фотоотчеты с основных мероприятий, проводимых в процессе работы по развитию ОСХ в Кыргызстане и повышению осведомленности об ОСХ среди граждан
+				.uk-grid.uk-child-width-1-1.gal-grid(class="uk-child-width-1-6@l uk-child-width-1-3@m")
+					div
+						.item
+							a(href="") Органический форум 2013
+					div
+						.item
+							a(href="") Международный Органический Форум, Бишкек-2014
+				div(class='uk-child-width-1-4@l uk-child-width-1-2@m uk-child-width-1-1', uk-grid='', uk-lightbox='animation: slide').slider
+					div
+						a.uk-inline(href='img/jpg/veg.jpg', data-caption='Caption 1')
+							img(src='img/jpg/veg.jpg', alt='')
+					div
+						a.uk-inline(href='img/jpg/veg.jpg', data-caption='Caption 2')
+							img(src='img/jpg/veg.jpg', alt='')
+					div
+						a.uk-inline(href='img/jpg/veg.jpg', data-caption='Caption 3')
+							img(src='.img/jpg/veg.jpg', alt='')
+				ul.uk-pagination(uk-margin='')
+					li
+						a(href='#')
+							span(uk-pagination-previous='')
+					li
+						a(href='#') 1
+					li
+						a(href='#') 2
+					li
+						a(href='#') 3
+					li
+						a(href='#') 4
+							span(uk-pagination-next='')
+
+
+		include assets/_footer.pug
+		include assets/_scripts.pug

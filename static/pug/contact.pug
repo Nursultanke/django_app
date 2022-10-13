@@ -1,0 +1,37 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		include mixin/mixins.pug
+	body
+		include assets/_header.pug
+		.uk-container
+			section.contact
+				h2.heading КОНТАКТНАЯ ИНФОРМАЦИЯ
+				p.uk-width-1-1(class="uk-width-1-2@m") Это эффективный путь для сохранения уникальной природы нашей страны и обеспечения ее населения здоровым органическим продовольствием. Это эффективный путь для сохранения уникальной природы.
+				.uk-grid.uk-child-width-1-1.uk-grid-small.contact-grid(class="uk-child-width-1-4@l uk-child-width-1-2@m")
+					.item
+						span(uk-icon='home')
+						.text
+							h5 Адрес  
+							p г. Бишкек ул. Гражданская 43/1
+					.item
+						span(uk-icon='clock')
+						.text
+							h5 Адрес  
+							p г. Бишкек ул. Гражданская 43/1
+					.item
+						span(uk-icon='receiver')
+						.text
+							h5 Адрес  
+							p г. Бишкек ул. Гражданская 43/1
+					.item
+						span(uk-icon='mail')
+						.text
+							h5 Адрес  
+							p г. Бишкек ул. Гражданская 43/1
+
+
+		include assets/_footer.pug
+		include assets/_scripts.pug

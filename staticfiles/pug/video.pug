@@ -1,0 +1,22 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		include mixin/mixins.pug
+	body
+		include assets/_header.pug
+		.uk-container
+			section.video
+				h2.heading ВИДЕО
+				p.uk-width-1-1(class="uk-width-1-2@m") Видео Фонда
+				.uk-grid.uk-child-width-1-1.uk-grid-small.video-grid(class="uk-child-width-1-3@m")
+					div
+						a(href="").item
+							.uk-cover-container
+								img(src="img/jpg/veg.jpg", alt="" uk-cover)
+							h3 В Бишкеке проходит выставка-ярмарка органической продукции
+							p С 14 по 16 октября в сквере возле Кыргызского национального аграрного университета пройдет выставка-ярмарка натуральной и органической продукции. На ней представят напитки, приготовленные по древним рецептам, мед, мясо-молочную продукцию и оригинальные ремесленные изделия.
+
+		include assets/_footer.pug
+		include assets/_scripts.pug

@@ -1,0 +1,62 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		include mixin/mixins.pug
+	body
+		include assets/_header.pug
+		.uk-container
+			section.projects
+				h2.heading ПРОЕКТЫ BIO-KG
+				p.uk-width-1-1(class='uk-width-1-2@m') С 2012 года ФОД "BIO-KG" реализует уже несколько проектов по продвижению органического сельского хозяйства в Кыргызской Республике
+				.uk-grid.uk-child-width-1-1.pro-grid(class='uk-child-width-1-4@l uk-child-width-1-2@m')
+					div
+						.project-item
+							.uk-cover-container
+								img(src="img/jpg/veg.jpg", alt="" uk-cover)
+								.text
+									h3 Международный Органический Форум, Бишкек-2014
+									p Международный Органический Форум, Бишкек-2014 Проект: Международный органический Фору...
+									a(href="").more Подробнее
+					div
+						.project-item
+							.uk-cover-container
+								img(src="img/jpg/veg.jpg", alt="" uk-cover)
+								.text
+									h3 Международный Органический Форум, Бишкек-2014
+									p Международный Органический Форум, Бишкек-2014 Проект: Международный органический Фору...
+									a(href="").more Подробнее
+					div
+						.project-item
+							.uk-cover-container
+								img(src="img/jpg/veg.jpg", alt="" uk-cover)
+								.text
+									h3 Международный Органический Форум, Бишкек-2014
+									p Международный Органический Форум, Бишкек-2014 Проект: Международный органический Фору...
+									a(href="").more Подробнее
+					div
+						.project-item
+							.uk-cover-container
+								img(src="img/jpg/veg.jpg", alt="" uk-cover)
+								.text
+									h3 Международный Органический Форум, Бишкек-2014
+									p Международный Органический Форум, Бишкек-2014 Проект: Международный органический Фору...
+									a(href="").more Подробнее
+				ul.uk-pagination(uk-margin='')
+					li
+						a(href='#')
+							span(uk-pagination-previous='')
+					li
+						a(href='#') 1
+					li
+						a(href='#') 2
+					li
+						a(href='#') 3
+					li
+						a(href='#') 4
+							span(uk-pagination-next='')
+
+
+		include assets/_footer.pug
+		include assets/_scripts.pug

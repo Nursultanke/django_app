@@ -1,0 +1,88 @@
+header
+	.top-line
+		.uk-navbar-container
+			.uk-container
+				.uk-navbar
+					.uk-navbar-left
+						ul.uk-navbar-nav
+							li
+								a(href="#").logo
+									img(src="img/png/logo.png", alt="")
+					.uk-navbar-right
+						ul.uk-navbar-nav
+							li
+								a(href="").phone-number
+									i(uk-icon='receiver')
+									span +996 312 36 55 71
+							li.uk-flex.uk-flex-middle
+								a(href='#modal-sections', uk-toggle='').phone-order Заказать звонок
+	.middle.uk-container
+		h1 Федерация органического движения "BIO-KG"
+		h3 Развитие органического сельского хозяйства в Кыргызской Республике
+	.bottom
+		nav.uk-navbar-container(class='uk-visible@m')
+			.uk-container
+				.uk-navbar-center.uk-flex-center
+					ul.uk-navbar-nav
+						li
+							a(href="") Новости
+						li
+							a(href="") О фонде
+						li
+							a(href="") Галерея
+						li
+							a(href="") Проекты
+						li
+							a(href="") Отзывы
+						li
+							a(href="") Контакты
+						li
+							a(href="") Видео
+						li
+							a(href="") Блог              
+					.uk-position-relative
+						a.uk-navbar-toggle(href='#', uk-search-icon='').search-icon
+						.uk-navbar-dropdown(uk-drop='mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav')
+							.uk-grid-small.uk-flex-middle(uk-grid='')
+								.uk-width-expand
+									form.uk-search.uk-search-navbar.uk-width-1-1
+										input.uk-search-input(type='search', placeholder='Search...', autofocus='')
+								.uk-width-auto
+									a.uk-navbar-dropdown-close(href='#', uk-close='')
+		.mob-nav(class='uk-hidden@m')
+			.uk-container
+				nav.uk-navbar.uk-navbar-container.uk-margin
+					.uk-navbar-right
+						a(href="#" uk-navbar-toggle-icon)
+						div(uk-dropdown='"pos: bottom-center; mode: click')
+							ul.uk-nav.uk-dropdown-nav
+								li
+									a(href='#') Новости
+								li
+									a(href='#') О фонде
+								li
+									a(href='#') Галерея
+								li
+									a(href='#') Проекты
+								li
+									a(href='#') Отзывы
+								li
+									a(href='#') Контакты
+								li
+									a(href='#') Видео
+								li
+									a(href='#') Блог
+#modal-sections(uk-modal='')
+	.uk-modal-dialog
+		button.uk-modal-close-default(type='button', uk-close='')
+		form.uk-padding
+			.uk-margin
+				input.uk-input(type='text', placeholder='Ваше имя')
+			.uk-margin
+				input.uk-input(type='text', placeholder='Ваш телефон')
+			.uk-margin
+				input.uk-input(type='text', placeholder='Email')
+			button.k-button.uk-button-primary Отправить 
+
+				
+

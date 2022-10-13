@@ -1,0 +1,593 @@
+
+
+//componets
+
+@import 'componets/breadcrumb'
+@import 'componets/button'
+@import 'componets/modal'
+
+// assets
+
+@import 'assets/_fonts'
+@import 'assets/_vars'
+@import 'assets/_keyframes-animate'
+@import 'assets/_header'
+@import 'assets/_footer'
+
+// style
+body
+  background: url(../img/jpg/bg.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+h2.heading
+  font-family: $robBold
+  color: #000000
+  margin: 0
+  letter-spacing: 1.5px
+  font-size: 36px
+  margin: 0 auto
+  text-transform: uppercase
+header
+  padding-top: 20px
+  .uk-navbar-container:not(.uk-navbar-transparent)
+    background: transparent
+  .top-line
+    font-family: $robReg
+    margin-bottom: 50px
+    ul.uk-navbar-nav
+      li
+        a
+          color: #ffffff
+          font-family: $robReg
+          padding: 0 50px
+        .phone-number
+          color: #ffffff
+          font-size: 18px
+          i
+            margin-right: 15px
+            svg
+              color: #ffffff
+              width: 30px
+              height: 30px
+        .phone-order
+          background: $green
+          border-radius: 30px
+          height: unset
+          padding: 10px 40px
+          font-family: $robBold
+          transition: 0.3s
+          &:hover
+            background: #339c41
+  .middle
+    margin-bottom: 50px 
+    h1
+      color: #ffffff
+      font-family: $robBold
+      margin: 0
+      text-align: center
+      margin-bottom: 10px
+    h3
+      color: #ffffff
+      margin: 0
+      font-family: $robReg
+      text-align: center
+  .bottom
+    ul.uk-navbar-nav
+      li
+        a
+          font-family: $robLight
+          font-weight: bold
+          color: #ffffff
+          font-size: 16px
+          transition: 0.3s
+          &:hover
+            color: $green
+    .search-icon
+      svg
+        color: #ffffff
+      &:hover
+        svg
+          color: $green
+    .uk-navbar-dropdown
+      margin-top: 0
+      width: 300px
+      padding: 10px
+      font-family: $robReg
+      right: 0
+      left: unset !important
+.home
+  .first-wrapper
+    background: #ffffff
+    text-align: center
+    padding: 20px
+    border-radius: 5px
+    padding-top: 50px
+    p
+      font-family: $robReg
+      color: #000000
+      margin: 0
+      margin-top: 20px
+      padding: 0 50px
+      width: 540px
+      margin: 20px auto
+    .home-grid
+      margin-top: 50px
+      .item
+        display: flex
+        align-items: flex-start
+        margin-bottom: 40px
+        .icon
+          height: 130px
+          width: 130px
+          margin-right: 50px
+        h4
+          font-family: $robBold
+          color: $green
+          margin: 0
+          text-align: left
+          font-size: 28px
+          margin-bottom: 20px
+        p
+          font-family: $robReg
+          color: #000000
+          margin: 0
+          text-align: left
+          padding: 0
+          width: unset
+  .numbers-wrapper
+    .number-item
+      text-align: center
+      padding: 50px 0
+      h4
+        font-size: 65px
+        font-family: $robBold
+        margin: 0
+        color: #ffffff
+      h5
+        font-size: 30px
+        font-family: $robReg
+        margin: 0
+        color: #ffffff
+      p
+        color: #ffffff
+        font-family: $robReg
+        font-size: 18px
+  .project-wrapper
+    background: #ffffff
+    border-radius: 5px
+    padding: 20px
+    text-align: center
+    p
+      color: #000000
+      font-family: $robReg
+      margin: 0
+      font-size: 18px
+    .uk-grid
+      margin-top: 60px
+    .project-item
+      margin-bottom: 20px
+      .uk-cover-container
+        height: 340px
+        width: 100%
+        border-radius: 5px
+        .text
+          position: absolute
+          top: 0
+          padding: 10px
+          left: 0
+          bottom: 0
+          background: rgba(0,0,0,0.4)
+          h3
+            color: #ffffff
+            font-family: $robReg
+            font-size: 22px
+            max-height: 3em
+            overflow: hidden
+            word-wrap: break-word
+          p
+            font-size: 18px
+            color: #ffffff
+            font-family: $robReg
+            max-height: 6em
+            overflow: hidden
+            word-wrap: break-word
+          .more
+            position: absolute
+            bottom: 10px
+            border: 1px solid #ffffff
+            padding: 10px 50px
+            color: #ffffff
+            font-family: $robReg
+            left: 50%
+            transform: translateX(-50%)
+            text-decoration: none
+            transition: 0.3s
+            &:hover
+              background: $green
+  .slider-wrapper
+    padding: 50px 0
+    ul.uk-slider-items
+      li
+        .item
+          width: 50%
+          margin: 0 auto
+          text-align: center
+          .uk-cover-container
+            width: 100px
+            height: 100px
+            border-radius: 50%
+            margin: 0 auto
+          h4
+            font-size: 20px
+            color: #ffffff
+            margin-bottom: 20px
+            font-family: $robBold
+          p
+            font-family: $robReg
+            font-size: 18px
+            color: #ffffff
+  .gallery-wrapper
+    padding: 50px 20px
+    background: #ffffff
+    border-radius: 5px
+    text-align: center
+    p
+      color: #000000
+      font-family: $robReg
+      font-size: 18px
+    .lightbox
+      margin-top: 70px
+  .partners-wrapper
+    background: #ffffff
+    padding: 50px 20px
+    border-radius: 5px
+    text-align: center
+    margin-top: 40px
+    ul.uk-slider-items
+      margin-top: 40px
+      li
+        text-align: center
+        .item
+          text-align: center
+          img
+            height: 90px
+    .uk-slidenav
+      svg
+        color: #000000
+
+.news
+  background: #ffffff
+  border-radius: 5px
+  padding: 50px 20px
+  .news-item
+    text-align: center
+    margin-bottom: 30px
+    .uk-cover-container
+      width: 100%
+      height: 300px
+    h3
+      color: $green
+      font-family: $robBold
+      margin: 20px 0
+      max-height: 3em
+      overflow: hidden
+      word-wrap: break-word
+      font-size: 18px
+    p
+      color: #000000
+      font-family: $robReg
+      margin: 0
+      font-size: 16px
+      max-height: 6em
+      overflow: hidden
+      word-wrap: break-word
+      margin-bottom: 20px
+    .link-to
+      border: 1px solid $green
+      padding: 10px 40px
+      color: $green
+      font-family: $robReg
+      text-decoration: none
+      transition: 0.3s
+      &:hover
+        background: $green
+        color: #ffffff
+.news-inner
+  background: #ffffff
+  padding: 50px 20px
+  text-align: center
+  border-radius: 5px
+  p
+    width: 960px
+    margin: 0 auto 
+    font-family: $robReg
+    color: #000000
+
+.about
+  background: #ffffff
+  padding: 50px 20px
+  border-radius: 5px
+  p
+    color: #000000
+    font-size: 16px
+    font-family: $robReg
+  .uk-grid
+    margin-top: 50px
+  h3
+    color: $green
+    font-size: 22px
+    font-family: $robBold
+    margin-bottom: 10px
+  h4
+    font-size: 20px
+    color: $green
+    font-family: $robBold
+    margin-bottom: 10px
+
+.gallery
+  padding: 50px 20px
+  background: #ffffff
+  border-radius: 5px
+  h2.heading
+    text-align: center
+    margin-bottom: 30px
+  p
+    text-align: center
+    margin: 0 auto
+    font-size: 18px
+    color: #000000
+    font-family: $robReg
+  .gal-grid
+    margin-top: 30px
+    .item
+      margin-bottom: 10px
+      a
+        font-family: $robReg
+        font-size: 18px
+        color: #000000
+
+.projects
+  padding: 50px 20px
+  background: #ffffff
+  border-radius: 5px
+  h2.heading
+    text-align: center
+    margin-bottom: 30px
+  p
+    text-align: center
+    margin: 0 auto
+    font-size: 18px
+    color: #000000
+    font-family: $robReg
+  .pro-grid
+    margin-top: 50px
+    .project-item
+      margin-bottom: 20px
+      .uk-cover-container
+        height: 340px
+        width: 100%
+        border-radius: 5px
+        .text
+          position: absolute
+          top: 0
+          padding: 10px
+          left: 0
+          bottom: 0
+          background: rgba(0,0,0,0.4)
+          h3
+            color: #ffffff
+            font-family: $robReg
+            font-size: 22px
+            max-height: 3em
+            overflow: hidden
+            word-wrap: break-word
+          p
+            font-size: 18px
+            color: #ffffff
+            font-family: $robReg
+            max-height: 6em
+            overflow: hidden
+            word-wrap: break-word
+          .more
+            position: absolute
+            bottom: 10px
+            border: 1px solid #ffffff
+            padding: 10px 50px
+            color: #ffffff
+            font-family: $robReg
+            left: 50%
+            transform: translateX(-50%)
+            text-decoration: none
+            transition: 0.3s
+            &:hover
+              background: $green
+.feedback
+  padding: 50px 20px
+  background: #ffffff
+  border-radius: 5px
+  h2.heading
+    text-align: center
+    margin-bottom: 30px
+  p
+    text-align: center
+    margin: 0 auto
+    font-size: 18px
+    color: #000000
+    font-family: $robReg
+  .feed-grid
+    margin-top: 60px
+    .feed
+      margin-bottom: 20px
+      .uk-cover-container
+        width: 90px
+        height: 90px
+        margin-right: 0 auto
+        margin-bottom: 20px
+        border-radius: 50%
+      h3
+        color: $green
+        font-size: 21px
+        font-family: $robBold
+        margin-bottom: 20px
+      .article-text
+        p
+          font-size: 16px
+          color: #000000
+          font-family: $robReg
+          text-align: left
+      .show-more
+        border: 1px solid $green
+        padding: 10px 30px
+        color: $green
+        font-family: $robReg
+        font-size: 16px
+        transition: 0.3s
+        text-decoration: none
+        margin-top: 20px
+        display: inline-block
+        &:hover
+          background: $green
+          color: #ffffff
+        i
+          margin-left: 10px
+.contact
+  padding: 50px 20px
+  background: #ffffff
+  border-radius: 5px
+  h2.heading
+    text-align: center
+    margin-bottom: 30px
+  p
+    text-align: center
+    margin: 0 auto
+    font-size: 18px
+    color: #000000
+    font-family: $robReg
+  .contact-grid
+    margin-top: 70px
+    .item
+      display: flex
+      align-items: flex-start
+      margin-bottom: 40px
+      span
+        margin-right: 20px
+        svg
+          width: 40px
+          height: 40px
+          color: $green
+      .text
+        margin-left: 10px
+        h5
+          color: $green
+          font-family: $robBold
+          margin: 0
+          font-size: 18px
+        p
+          margin: 0
+          font-family: $robReg
+          color: #000000
+          text-align: left
+.video, .blog, .video-inner, .blog-inner
+  padding: 50px 20px
+  background: #ffffff
+  border-radius: 5px
+  h2.heading
+    text-align: center
+    margin-bottom: 30px
+  p
+    text-align: center
+    margin: 0 auto
+    font-size: 18px
+    color: #000000
+    font-family: $robReg
+  .video-grid
+    margin-top: 50px
+    .item
+      margin-bottom: 40px
+      display: inline-block
+      .uk-cover-container
+        width: 100%
+        height: 250px
+      h3
+        color: $green
+        font-size: 18px
+        font-family: $robReg
+        text-align: left
+      p
+        max-height: 6em
+        overflow: hidden
+        word-wrap: break-word
+        font-size: 16px
+        font-family: $robReg
+        color: #000000
+        text-align: left
+  .video-wrapper
+    height: 500px
+    width: 100%
+  .article-wrapper
+    margin-top: 40px
+    p
+      font-size: 18px
+      color: #000000
+      font-family: $robReg
+  .img-container
+    width: 100%
+    height: 500px
+    
+        
+footer
+  padding: 50px 20px
+  h2.heading
+    color: #ffffff
+  .copyright
+    font-size: 16px
+    color: #ffffff
+  .footer-grid
+    margin-top: 40px
+    .item
+      display: flex
+      align-items: flex-start
+      margin-bottom: 40px
+      span
+        svg
+          width: 40px
+          height: 40px
+          color: #ffffff
+      .text
+        margin-left: 10px
+        h5
+          color: $green
+          font-family: $robBold
+          margin: 0
+        p
+          margin: 0
+          font-family: $robReg
+          color: #ffffff
+    .map-wrapper
+      height: 100%
+      width: 100%
+    
+.mob-nav
+  a
+    display: inline-block
+    margin: 20px
+    svg
+      color: #ffffff
+      width: 30px
+      height: 30px
+  .uk-dropdown
+    left: 0 !important
+    width: 100%
+    padding: 15px
+    border-radius: 5px
+    ul
+      li
+        a
+          margin: 10px
+          font-size: 18px
+          color: #000000
+          font-family: $robReg
+
+// media
+
+@import 'assets/_media'
